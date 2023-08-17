@@ -20,7 +20,7 @@ const App = () => {
   };
 const handlekaeyPress = (e) => {
     e.key ==="Enter" && searchMovies(searchTerm);
-    
+}
   return (
     <div id="app">
       <div className="logo">
