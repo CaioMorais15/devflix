@@ -50,7 +50,6 @@ const App = () => {
           {movies.map((movie) => (
             <MovieCard key={movie.imdbID} movies={movie} />
           ))}
-          
         </div>
       ) : (
         <div className="empty">
