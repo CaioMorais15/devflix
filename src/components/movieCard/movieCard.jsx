@@ -1,8 +1,14 @@
+import {useState } from "react";
 import MovieDesc from "../movieDescription/movieDescription";
 import styles from "./movieCard.module.css";
 
 const MovieCard = ({ movies }) => {
   const movie = movies;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  }
 
   return (
     <>
@@ -15,7 +21,7 @@ const MovieCard = ({ movies }) => {
             src={
               movie.Poster !== "N/A"
                 ? movie.Poster
-                : "https:via.placeholder.com/400"
+                : "https://via.placeholder.com/400"
             }
             alt={movie.Title}
           />
@@ -25,7 +31,7 @@ const MovieCard = ({ movies }) => {
           <h3>{movie.Title}</h3>
         </div>
       </div>
-      <MovieDesc movies={movie} />
+      {isModalOpen && <MovieDesc movies={movie} click={toggleModal}/>}
     </>
   );
 };
