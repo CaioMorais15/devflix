@@ -12,7 +12,7 @@ const MovieCard = ({ movies }) => {
 
   return (
     <>
-      <div className={styles.movie}>
+      <div className={styles.movie} onClick={toggleModal}>
         <div>
           <p>{movie.Year}</p>
         </div>

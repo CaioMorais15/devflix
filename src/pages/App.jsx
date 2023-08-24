@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import "./App.css";
 import MovieCard from "../components/movieCard/movieCard";
 
@@ -24,7 +23,7 @@ const App = () => {
     console.log(data);
     setMovies(data.Search);
   };
-  const handlekaeyPress = (e) => {
+  const handlekeyPress = (e) => {
     e.key === "Enter" && searchMovies(searchTerm);
   };
   return (
@@ -36,7 +35,7 @@ const App = () => {
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handlekaeyPress}
+          onKeyDown={handlekeyPress}
           placeholder="Pesquise por filmes"
         />
         <img
