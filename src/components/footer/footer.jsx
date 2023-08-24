@@ -16,11 +16,11 @@ const Footer = ({ children, link }) => {
           {children}
           </a>
           </p>
-            <SocialLinks icon={"logo-instagram"} href={"#"} />
-            <SocialLinks icon={"logo-github"} href={"#"} />
-            <SocialLinks icon={"logo-tiktok"} href={"#"} />
-            <SocialLinks icon={"logo-linkedin"} href={"#"} />
-            <SocialLinks icon={"logo-twitter"} href={"#"} />
+            <SocialLinks icon={"logo-instagram"} href={"https://www.instagram.com/morais_caio06/"} />
+            <SocialLinks icon={"logo-github"} href={"https://github.com/CaioMorais15"} />
+            <SocialLinks icon={"logo-tiktok"} href={"https://www.tiktok.com/@caiofrancisco159"} />
+            <SocialLinks icon={"logo-linkedin"} href={"https://www.linkedin.com/in/caio-francisco-8412ab28a/"} />
+            <SocialLinks icon={"logo-twitter"} href={"https://twitter.com/1CaioFrancisco1"} />
     </footer>
   );
 };
